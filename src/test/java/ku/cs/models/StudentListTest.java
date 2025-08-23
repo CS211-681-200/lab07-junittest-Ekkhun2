@@ -18,10 +18,12 @@ class StudentListTest {
 
     @Test
     public void testAddNewStudent(){
-        /* sList = StudentList<Student>[
+        /*
+        sList = StudentList<Student>[
         sList.addNewStudent("6710000001", "Alice");
         sList.addNewStudent("6710000002", "Magnus");
-        sList.addNewStudent("6710000003", "Chara");]*/
+        sList.addNewStudent("6710000003", "Chara");]
+        */
 
         assertEquals(3, sList.getStudents().size());
         assertEquals(0, sList.getStudents().get(0).getScore());
@@ -38,10 +40,12 @@ class StudentListTest {
 
     @Test
     public void testFindStudentById(){
-        /* sList = StudentList<Student>[
+        /*
+        sList = StudentList<Student>[
         sList.addNewStudent("6710000001", "Alice");
         sList.addNewStudent("6710000002", "Magnus");
-        sList.addNewStudent("6710000003", "Chara");]*/
+        sList.addNewStudent("6710000003", "Chara");]
+        */
 
         assertEquals("Alice", sList.findStudentById("6710000001").getName());
         assertEquals("Magnus", sList.findStudentById("6710000002").getName());
@@ -51,10 +55,13 @@ class StudentListTest {
 
     @Test
     public void testFilterByName(){
-        /* sList = StudentList<Student>[
+        /*
+        sList = StudentList<Student>[
         sList.addNewStudent("6710000001", "Alice");
         sList.addNewStudent("6710000002", "Magnus");
-        sList.addNewStudent("6710000003", "Chara");]*/
+        sList.addNewStudent("6710000003", "Chara");]
+        */
+
         sList.getStudents().get(0).changeName("Alan");
         sList.getStudents().get(1).changeName("Brian");
         sList.getStudents().get(2).changeName("Chara");
@@ -67,10 +74,12 @@ class StudentListTest {
 
     @Test
     public void testGiveScoreToId(){
-        /* sList = StudentList<Student>[
+        /*
+        sList = StudentList<Student>[
         sList.addNewStudent("6710000001", "Alice");
         sList.addNewStudent("6710000002", "Magnus");
-        sList.addNewStudent("6710000003", "Chara");]*/
+        sList.addNewStudent("6710000003", "Chara");]
+        */
 
         assertEquals(0, sList.getStudents().get(0).getScore());
         assertEquals(0, sList.getStudents().get(1).getScore());
